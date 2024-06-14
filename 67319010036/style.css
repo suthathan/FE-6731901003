@@ -1,0 +1,31 @@
+ul{
+    background-color: lightpink;
+    list-style-type: none;
+    border-radius: 20px;
+    padding: 8px;
+    margin: 0;
+    overflow: hidden;
+}
+li{
+    float: left;
+}
+li a{
+    display: inline-block;
+    color: rgb(219, 34, 105);
+    text-align: center;
+    padding: 20px 15px;
+    text-decoration:none ;
+}
+li a:hover{
+    color: rgb(231, 14, 115);
+    background-color:rgb(241, 239, 241) ;
+    border-radius: 20px;
+}
+.nav-end{
+    float: right;
+}
+.active-link{
+    color: rgb(231, 14, 115);
+    background-color:rgb(241, 239, 241) ;
+    border-radius: 20px;
+}
