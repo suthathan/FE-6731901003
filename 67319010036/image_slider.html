@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider</title>
+    <style>
+        .nav-arrow{
+            display: inline-block;
+            padding: 5px;
+            background-color: rgb(6, 69, 133);
+        }
+        .btn-color{
+            background-color: rgb(0, 46, 252);
+            color: aliceblue;
+            border-radius: 8px;
+        }
+    </style>
+    <script>
+        //var number1 = 10;
+        let count_p = 0;
+        //const number3 = 10;
+        const name_p = ["cat.jpg","abcd.jpg","dog.jpg","asdf.jpeg"];
+        name_p[0];
+        console.log(name_p[count_p])
+        function forwardPic(){
+            //name_p.length;
+            if(count_p < name_p.length-1){
+                count_p = count_p + 1;
+            }else{
+                count_p = 0;
+            }
+            console.log("count_p = ",count_p);
+            console.log("name_p = ",name_p[count_p]);
+            console.log( name_p.length);
+
+            document.getElementById("slider").src = name_p[count_p];
+        }
+        setInterval(forwardPic, 100);
+    </script>
+</head>
+
+    <div>
+        <button class="btn-color">backward</button>
+        <button class="btn-color" onclick="forwardPic()">forward</button>
+    </div>
+    <img id="slider" width="700px" src="cat.jpg" alt="">
+</body>
+</html
